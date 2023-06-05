@@ -20,5 +20,6 @@ export default defineConfig({
   build: {
     // cssMinify: true,
     sourcemap: false,
-  }
+  },
+  base: '/barcodegen/'
 })
