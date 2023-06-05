@@ -64,16 +64,24 @@ const QRCodeBarcodeGenerator = () => {
                     <div id="qrcode" className='qrcode' ref={qrCodeRef}>
                         {text && <QRCodeSVG value={text} />}
                     </div>
-                    <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handlePrintQRCode}>Print QR Code</button>
-                    <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handleSaveQRCode}>Save QR Code</button>
+                    {text && (
+                        <>
+                            <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handlePrintQRCode}>Print QR Code</button>
+                            <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handleSaveQRCode}>Save QR Code</button>
+                        </>
+                    )}
                 </div>
                 <div className='flex justify-center gap-5'>
                     <h3 className='flex items-center font-bold'>Barcode:</h3>
                     <div id="barcode" className='barcode' ref={barcodeRef}>
                         {text && <Barcode value={text} />}
                     </div>
-                    <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handlePrintBarcode}>Print Barcode</button>
-                    <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handleSaveBarcode}>Save Barcode</button>
+                    {text && (
+                        <>
+                            <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handlePrintBarcode}>Print Barcode</button>
+                            <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handleSaveBarcode}>Save Barcode</button>
+                        </>
+                    )}
                 </div>
             </div>
         </div>
