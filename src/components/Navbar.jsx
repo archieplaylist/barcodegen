@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <div>
-            <div className="p-[1px] navbar min-h-0 bg-neutral text-neutral-content">
+            <div className="p-[1px] navbar shadow min-h-0 bg-neutral text-neutral-content">
                 <div className="flex-1 mx-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
                         <path fillRule="evenodd"
