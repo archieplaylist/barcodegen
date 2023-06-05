@@ -54,8 +54,8 @@ const QRCodeBarcodeGenerator = () => {
 
     return (
         <div>
-            <h2 className='flex justify-center mb-4 text-2xl font-bold'>QR Code and Barcode Generator</h2>
-            <div className='flex justify-center mb-4'>
+            {/* <h2 className='flex justify-center mb-4 text-2xl font-bold'>QR Code and Barcode Generator</h2> */}
+            <div className='flex justify-center m-4'>
                 <input className='p-2 text-center border rounded' type="text" placeholder='Input' value={text} onChange={handleTextChange} />
             </div>
             <div>
@@ -76,9 +76,6 @@ const QRCodeBarcodeGenerator = () => {
                     <button className='p-2 border rounded-lg hover:bg-green-600 hover:border-none hover:rounded-lg' onClick={handleSaveBarcode}>Save Barcode</button>
                 </div>
             </div>
-            <footer className='flex items-end h-screen'>
-                <h1>test</h1>
-            </footer>
         </div>
     );
 };
